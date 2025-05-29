@@ -24,7 +24,7 @@ connection_string = f"""
 """
 
 # Configuración de logs
-log_file = 'Movint.log'
+log_file = 'movapi.log'
 log_handler = RotatingFileHandler(log_file, maxBytes=1000000, backupCount=3)
 logging.basicConfig(
     level=logging.INFO,
