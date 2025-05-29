@@ -65,6 +65,15 @@ def clientes():
     sql = "SELECT COD_CLIENT, RAZON_SOCI FROM GVA14"  # ejemplo
     return jsonify(ejecutar_consulta(sql))
 
+@app.route("/api/clientes", methods=["GET"])
+def obtener_clientes():
+    # Esto es solo una respuesta de prueba
+    clientes = [
+        {"COD_CLIENT": "0001", "RAZON_SOCI": "Cliente Uno"},
+        {"COD_CLIENT": "0002", "RAZON_SOCI": "Cliente Dos"}
+    ]
+    return jsonify(clientes)
+    
 @app.route('/articulos')
 def articulos():
     sql = "SELECT COD_ARTICU, DESCRIPCIO FROM STA11"  # ejemplo
