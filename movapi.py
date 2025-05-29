@@ -4,7 +4,7 @@ from datetime import datetime
 from logging.handlers import RotatingFileHandler
 import pyodbc
 import logging
-import config
+from config import CONEXIONES
 
 app = Flask(__name__)
 CORS(app)  # Habilita CORS para todas las rutas y orígenes
