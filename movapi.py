@@ -1,9 +1,10 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from datetime import datetime
+from logging.handlers import RotatingFileHandler
 import pyodbc
 import logging
-from logging.handlers import RotatingFileHandler
+import config
 
 app = Flask(__name__)
 CORS(app)  # Habilita CORS para todas las rutas y orígenes
