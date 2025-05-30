@@ -1,7 +1,7 @@
 services:
   - type: web
     name: movapi
-    env: python
+    env: docker
     plan: free
     dockerfilePath: Dockerfile
     # buildCommand: ""
