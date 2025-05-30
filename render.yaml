@@ -3,4 +3,4 @@ services:
     name: movapi
     env: docker
     plan: free
-    dockerfilePath: Dockerfile
+    dockerfilePath: dockerfile
