@@ -3,5 +3,6 @@ services:
     name: movapi
     env: python
     plan: free
-    buildCommand: ""
-    startCommand: python movapi.py
+    dockerfilePath: Dockerfile
+    # buildCommand: ""
+    # startCommand: python movapi.py
