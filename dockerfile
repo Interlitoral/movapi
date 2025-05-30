@@ -9,12 +9,12 @@ RUN apt-get update && \
     ACCEPT_EULA=Y apt-get install -y msodbcsql17 && \
     apt-get clean && rm -rf /var/lib/apt/lists/*
 
-# Crear carpeta de trabajo y copiar el proyecto
+# Carpeta de trabajo
 WORKDIR /app
 COPY . /app
 
-# Instalar dependencias de Python
+# Instalar Python requirements
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Comando para iniciar tu app (podés modificar esto si usás otro archivo)
+# Iniciar tu aplicación
 CMD ["python", "movapi.py"]
